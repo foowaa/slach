@@ -44,7 +44,7 @@ void* _slach_malloc(size_t n, size_t size){
     ptr = calloc(n, size);
     if(ptr == NULL){
         fprintf(stderr, "Fail to malloc!\n");
-        abort();
+        exit(1);
     }
     return ptr;
 }
@@ -52,7 +52,7 @@ void* _slach_malloc(size_t n, size_t size){
 void _slach_free(void* ptr){
     if (ptr == NULL){
         fprintf(stderr, "Fail to free!\n");
-        abort();
+        exit(1);
     }
     free(ptr);
     ptr = NULL;
@@ -78,7 +78,7 @@ int slach_rand_int_range(int max, int min){
 /*
 Matrix and Vector
  */
-
+#define T float
 #define IN
 #define OUT
 #define INOUT
@@ -96,27 +96,27 @@ typedef struct _Matrix_
 {
     unsigned int mHeight;
     unsigned int mWidth;
-    float **mData;
+    T** mData;
 }Matrix;
 
 Matrix* createMatrix(IN unsigned int mHeight, IN unsigned int mWidth);
-void destroyMatrix(INOUT Matrix *mPtr);
+void destroyMatrix(INOUT Matrix* mPtr);
 void copyMatrix(IN Matrix* src, OUT Matrix* dest);
-void arrayToMatrix(IN float** src, OUT Matrix* dest);
-void matrixToArray(IN Matrix* src, OUT float** dest);
+void arrayToMatrix(IN T** src, OUT Matrix* dest, unsigned int height, unsigned int weight);
+void matrixToArray(IN Matrix* src, OUT T** dest, unsigned int height, unsigned int weight);
 
 typedef struct _Vector_
 {
     unsigned int vLength;
-    float *vData;
+    T *vData;
 }Vector;
 
 Vector* createVector(IN unsigned int vLength);
-Vector* copyToVector(IN float* src, int len);
+Vector* copyToVector(IN T* src, int len);
 void destroyVector(INOUT Vector *vptr);
 void copyVector(IN Vector* src, OUT Vector* dest); 
-void arrayToVector(IN float* src, OUT Vector* dest);
-void vectorToArray(IN Vector* src, OUT float* dest);
+void arrayToVector(IN T* src, OUT Vector* dest);
+void vectorToArray(IN Vector* src, OUT T* dest);
 
 
 
