@@ -1,0 +1,12 @@
+language: c
+compiler: gcc
+
+before_install:
+- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+- sudo apt-get update -qq
+
+install:
+- sudo apt-get install -qq gcc
+- export CC="gcc"
+
+script: "bash ./build.sh"

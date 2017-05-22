@@ -1,9 +1,9 @@
-#include "base.h"
-#include "operation.h"
-#include "LUD.h"
-#include "QRD.h"
-#include "SVD.h"
-#include "FFT.h"
+#include "./include/base.h"
+#include "./include/operation.h"
+#include "./include/LUD.h"
+#include "./include/QRD.h"
+#include "./include/SVD.h"
+#include "./include/FFT.h"
 
 /*
 This is an example, and test only whether it can run or not. The validity can be verified by Matlab-like software.

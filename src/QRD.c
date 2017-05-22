@@ -38,7 +38,7 @@ limitations under the License.
 */
 
 
-#include "QRD.h"
+#include "../include/QRD.h"
 
 /** \brief QRD result data structure
  *

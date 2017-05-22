@@ -38,7 +38,7 @@ limitations under the License.
 
 */
 
-#include "operation.h"
+#include "../include/operation.h"
 
 /**< Matrix operations */
 /** \brief matrix*matrix, private function
