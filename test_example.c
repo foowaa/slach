@@ -150,8 +150,8 @@ int main(){
     printmArr(a6,3,3);
     QRsolvev(a1,3,3,a2,3,a3,3);
     printvArr(a3,3);
-    QRsolvem(a6,3,3,a1,3,3,a5,3,3);
-    printmArr(a5,3,3);
+   // QRsolvem(a6,3,3,a1,3,3,a5,3,3);
+    //printmArr(a5,3,3);
 
     /*
     Test SVD
