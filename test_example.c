@@ -154,7 +154,7 @@ int main(){
     /*
     Test SVD
    */
-/*
+	/*
     getS(a8,8,3,a9,3);
     printvArr(a9,3);
     getV(a8,8,3,a10,3,3);
@@ -164,10 +164,11 @@ int main(){
 
     /*
     Test FFT
-    */
+    
     fftAbs(a12, 16,a13, 16,4,4);
     printvArr(a13,16);
-
+   */
+	
 return 0;
 }
 
