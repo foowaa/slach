@@ -156,14 +156,14 @@ int main(){
     /*
     Test SVD
    */
-
+   /*
     getS(a8,8,3,a9,3);
     printvArr(a9,3);
     getV(a8,8,3,a10,3,3);
     printmArr(a10,3,3);
     getUs(a8,8,3,a11,8,3);
     printmArr(a11,8,3);
-
+*/
 
     /*
     Test FFT
