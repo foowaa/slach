@@ -168,9 +168,10 @@ int main(){
     /*
     Test FFT
     */
-
+/*
     fftAbs(a12, 16,a13, 16,4,4);
     printvArr(a13,16);
-	return 0;
+*/
+return 0;
 }
 
