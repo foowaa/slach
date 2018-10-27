@@ -1,6 +1,5 @@
 # Simple Linear Algebra C Header (SLACH)
 
-[![GitHub license](http://7xs6jl.com1.z0.glb.clouddn.com/svgapache2.svg)](./LICENSE)
 [![Build Status](https://travis-ci.org/foowaa/slach.svg?branch=master)](https://travis-ci.org/foowaa/slach)
 
 slach is a simple linear algebra libraries desigined for *low-coupling* used C89, and it is convient for portability. slach has main parts: base, operation, QR decomposition, LU decomposition, SVD decomposition and Fast Fourier Transform(FFT). All other parts except for base all depend on base, rather than compelx dependency. If users want to just use the library, the users don't need to know inner data structures, instead you can use arraies to achieve results. If users want to implement the algorithms, it's easy to transfer programs. In the program, I seperate the inner and outer clearly, so a lot of wrapper functions employed in the program. 
